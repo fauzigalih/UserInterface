@@ -1,0 +1,147 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-one {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.column-one {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-one {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-two {
+    flex: 1;
+    order: 3;
+}
+
+/* Latihan 2 */
+.container-two {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.service {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.service.one {
+    background-color: blue;
+}
+
+.service.two {
+    background-color: green;
+}
+
+.service.three {
+    background-color: red;
+}
+
+/* Latuhan 3 */
+.container-three {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.thumbnail {
+    width: 24%;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 220px;
+}
+
+/* Latihan 4 */
+.container-four {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    padding: 0 5px 20px 5px;
+    text-align: center;
+}
+
+.card.main {
+    transform: scale(1.125);
+}
+
+/* Latihan 5 */
+.container-five {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 5px;
+}
+
+.box p {
+    margin: auto;
+}
+
+/* Latihan 6 */
+.container-six {
+
+}
+
+@media(min-width: 600px) {
+    .container-two {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: 30%;
+    }
+}
