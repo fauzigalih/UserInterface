@@ -22,7 +22,7 @@ Documentation and Exercises for Grid Layout .
   <li>align-content</li>
   <li>place-content</li>
 </ul>
-<h3>Container</h3>
+<h3>Item</h3>
 <ul>
   <li>grid-column-start</li>
   <li>grid-column-end</li>
