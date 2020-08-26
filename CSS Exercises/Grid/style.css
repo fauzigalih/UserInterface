@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(206, 208, 209);
+}
+
+/* Start Grid Row Column */
+.container1 {
+    margin: 50px auto;
+    width: 60%;
+    text-align: center;
+    display: grid;
+}
+
+.item {
+    background-color: rgb(52, 191, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even){
+    background-color: rgb(253, 124, 124);
+}
+
+/* Latihan 1 */
+.container1.one {
+    grid-template-columns: 1fr 3fr 1.5fr;
+}
+
+/* Latihan 2 */
+.container1.two {
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 5fr 2.5fr;
+    grid-auto-rows: 100px;
+}
+
+/* Latihan 3 */
+.container1.three {
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-auto-columns: 3fr;
+    grid-auto-flow: column;
+}
+
+/* Latihan 4 */
+.container1.four {
+    grid-auto-columns: 2fr;
+    grid-auto-flow: column;
+}
+
+/* Latihan 5 */
+.container1.five {
+    grid-auto-columns: 40px;
+}
+
+/* Latihan 6 */
+.container1.six {
+    grid-auto-columns: 40px;
+    grid-template-rows: auto auto 5fr 7fr;
+    grid-auto-rows: 2fr;
+}
+/* End Grid Row Column */
