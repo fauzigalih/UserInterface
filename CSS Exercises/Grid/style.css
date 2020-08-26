@@ -7,12 +7,9 @@ body {
     background-color: rgb(206, 208, 209);
 }
 
-/* Start Grid Row Column */
-.container1 {
-    margin: 50px auto;
+h3 {
     width: 60%;
-    text-align: center;
-    display: grid;
+    margin: auto;
 }
 
 .item {
@@ -24,6 +21,14 @@ body {
 
 .item:nth-child(even){
     background-color: rgb(253, 124, 124);
+}
+
+/* Start Grid Row Column */
+.container1 {
+    margin: 50px auto;
+    width: 60%;
+    text-align: center;
+    display: grid;
 }
 
 /* Latihan 1 */
@@ -64,3 +69,31 @@ body {
     grid-auto-rows: 2fr;
 }
 /* End Grid Row Column */
+
+/* Start Grid Special Keyword Function  */
+.container2 {
+    width: 60%;
+    margin: 0 auto 50px auto;
+    display: grid;
+}
+
+/* Latihan 1 */
+.container2.one {
+    grid-template-columns: repeat(9, 2fr);
+}
+
+/* Latihan 2 */
+.container2.two {
+    grid-template-columns: 1fr min-content max-content;
+}
+
+/* Latihan 3 */
+.container2.three {
+    border: 5px solid black;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+/* Latihan 4 */
+.container2.four {
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+}
