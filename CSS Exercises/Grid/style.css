@@ -97,3 +97,76 @@ h3 {
 .container2.four {
     grid-template-columns: 1fr minmax(200px, 300px) 1fr;
 }
+/* End Grid Special Keyword Function  */
+
+/* Start Grid Area and Gap  */
+.container3 {
+    width: 60%;
+    margin: 0 auto 50px auto;
+    display: grid;
+}
+
+/* Latihan 1 */
+.container3.one {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 'header header header'
+    'sidebar sidebar sidebar'
+    'main main main'
+    'footer footer footer';
+}
+
+.container3 .item {
+    color: white;
+}
+
+.container3 .item.header {
+    grid-area: header;
+    background-color: rgb(255, 140, 140);
+}
+
+.container3 .item.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(91, 142, 207);
+}
+
+.container3 .item.main {
+    grid-area: main;
+    background-color: orange;
+}
+
+.container3 .item.footer {
+    grid-area: footer;
+    background-color: grey;
+}
+
+@media screen and (min-width: 576px){
+    .container3.one {
+        grid-template-areas: 'header header header'
+            'sidebar main main'
+            'sidebar main main'
+            'footer footer footer';
+    }
+}
+
+/* Latihan 2 */
+.container3.two {
+    grid-template: [row1-start] 'header header header' 1fr
+    [row1-end row2-start] 'main main main' 2fr 
+    [row2-end row3-start] 'footer footer footer' 3fr [row3-end]
+    / 1fr 2fr 3fr;
+}
+
+/* Latihan 3 */
+.container3.three {
+    border: 5px solid black;
+    background-color: white;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.container3.three .item {
+    padding: 50px 0;
+}
+/* End Grid Area and Gap  */
