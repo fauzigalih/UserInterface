@@ -87,7 +87,7 @@ body {
 .card {
     border: 1px solid #999;
     border-radius: 10px;
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     margin: 10px;
 }
@@ -113,6 +113,7 @@ body {
     margin: 50px auto;
     border: 5px solid black;
     display: flex;
+    background-color: white;
 }
 
 .box {
@@ -132,7 +133,51 @@ body {
 
 /* Latihan 6 */
 .container-six {
+    width: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
 
+.container-six .content {
+    display: flex;
+}
+
+.container-six header {
+    background-color: red;
+    padding: 5% 0;
+}
+
+.container-six .content .sidebar {
+    flex: 1;
+}
+
+.container-six .content .sidebar aside {
+    background-color: green;
+    padding: 20% 0;
+}
+
+.container-six .content .sidebar nav {
+    background-color: blue;
+    padding: 30% 0;
+}
+
+.container-six .content main {
+    background-color: orange;
+    box-sizing: border-box;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-six footer {
+    background-color: grey;
+    padding: 3% 0;
 }
 
 @media(min-width: 600px) {
