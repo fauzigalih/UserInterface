@@ -170,3 +170,52 @@ h3 {
     padding: 50px 0;
 }
 /* End Grid Area and Gap  */
+
+/* Start Grid Alignment */
+.item.i1, .item.i4, .item.i7 {
+    width: 80px;
+}
+
+.item.i2, .item.i5, .item.i8 {
+    width: 50px;
+}
+
+.item.i3, .item.i6, .item.i9 {
+    width: 110px;
+}
+
+.container4 {
+    width: 60%;
+    margin: 0 auto 50px auto;
+    display: grid;
+    gap: 5px;
+}
+
+.container4 .item {
+    border: 3px solid rgb(0, 0, 0);
+    height: 100px;
+    background-color: rgb(117, 204, 255);
+}
+
+/* Latihan 1 */
+.container4.one {
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Latihan 2 */
+.container4.two {
+    background-color: black;
+    height: 400px;
+    grid-template-columns: 120px 130px 120px;
+    grid-template-rows: 80px 80px 80px;
+    justify-content: end;
+    align-content: space-around;
+}
+
+.container4.two .item {
+    width: 80px;
+    height: 40px;
+}
