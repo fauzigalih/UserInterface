@@ -5,6 +5,7 @@ html, body {
 
 body {
     background-color: rgb(206, 208, 209);
+    margin-bottom: 500px;
 }
 
 h3 {
@@ -219,3 +220,130 @@ h3 {
     width: 80px;
     height: 40px;
 }
+/* End Grid Alignment */
+
+/* Start Grid Item Properties */
+.container5 {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.container5 .item {
+    background-color: transparent;
+}
+
+.container5 .item.property {
+    background-color: rgb(179, 245, 242);
+}
+
+/* Latihan 1 */
+.container5.one .item.property {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* grid-column: 2 / 4;
+    grid-row: 2 / 4; */
+}
+
+/* Latihan 2 */
+.container5.two .item.property {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    /* grid-column: 1 / span 2;
+    grid-row: 1 / span 4; */
+}
+
+/* Latihan 3 */
+.container5.three .item.property {
+    grid-column-start: -1;
+    grid-column-end: -3;
+    grid-row-start: -1;
+    grid-row-end: -4;
+    /* grid-column: -1 / -3;
+    grid-row: -1 / -4; */
+}
+
+/* Latihan 4 */
+.container5.four, .container5.five, .container5.six, .container5.seven {
+    color: white;
+    border: 5px solid black;
+    grid-auto-rows: 40px;
+}
+
+.container5 .item.header {
+    grid-area: 1 / 1 / 2 / span 3;
+    background-color: rgb(255, 140, 140);
+}
+
+.container5 .item.sidebar {
+    grid-area: 2 / 1 / span 2 / 2;
+    background-color: rgb(91, 142, 207);
+}
+
+.container5 .item.main {
+    grid-area: 2 / 2 / span 2 / span 2;
+    background-color: orange;
+}
+
+.container5 .item.footer {
+    grid-area: 4 / 1 / 5 / span 3;
+    background-color: grey;
+}
+
+/* Latihan 5 */
+.container5.five .item.header {
+    justify-self: start;
+}
+
+.container5.five .item.sidebar {
+    justify-self: center;
+}
+
+.container5.five .item.main {
+    justify-self: end;
+}
+
+.container5.five .item.footer {
+    justify-self: stretch;
+}
+
+/* Latihan 6 */
+.container5.six .item.header {
+    align-self: start;
+}
+
+.container5.six .item.sidebar {
+    align-self: center;
+}
+
+.container5.six .item.main {
+    align-self: end;
+}
+
+.container5.six .item.footer {
+    align-self: stretch;
+}
+
+/* Latihan 7 */
+.container5.seven .item.header {
+    place-self: center start;
+}
+
+.container5.seven .item.sidebar {
+    place-self: center start;
+}
+
+.container5.seven .item.main {
+    place-self: center;
+}
+
+.container5.seven .item.footer {
+    place-self: end;
+}
+/* End Grid Item Properties */
