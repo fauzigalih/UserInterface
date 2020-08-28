@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 105vh;
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    position: absolute;
+    transform: all 0.5s;
+    background-color: white;
+    z-index: 9;
+    top: 0px;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    padding: 0.25rem 0;
+    margin: 0 1.8rem;
+    text-transform: uppercase;
+}
+
+.nav ul li.logo .black {
+    display: none;
+}
+
+.nav ul li.logo a {
+    margin: 0 4rem;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 37px;
+    right: 45px;
+    padding: 5px;
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-icon span {
+    background: #333;
+    width: 30px;
+    height: 1px;
+    display: block;
+    transition: 300ms linear all;
+}
+
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(3) {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.nav-icon span:nth-child(2) {
+    margin: 5px 0;
+    width: 32px;
+}
+
+.nav-icon:hover span:nth-child(1),
+.nav-icon:hover span:nth-child(3) {
+    width: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.full-nav {
+    background: #f1c30f;
+    color: #18191d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 3.85rem;
+    z-index: 99;
+    overflow-x: hidden;
+    visibility: hidden;
+    transform: translateY(-100px);
+    transition: all .4s ease-in-out;
+}
+
+.full-nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all .4s ease-in-out;
+    z-index: 99;
+}
+
+.full-nav .logo {
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
