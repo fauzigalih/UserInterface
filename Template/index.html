@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <ul class="bxslider">
             <li>
                 <div class="bg-video">
-                    <video>
-                        <source>
-                    </video>
+                    <video source src="video/part2.mp4" autoplay muted loop id="herovideo"></video>
+                    <div class="container">
+                        <div class="vidContent">
+                            <h1 class="text-left">WELCOME TO BLOG</h1>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                nesciunt natus maxime tempore debitis eos nulla quo dolor pariatur provident
+                                consectetur, nobis possimus numquam eum consequatur maiores tenetur eveniet!</p>
+                            <a href="" id="vidBtn">Click Here</a>    
+                        </div>
+                    </div>
+                    <ul class="social-icons list-inline">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="bg-video">
+                    <video src="video/part3.mp4" autoplay muted loop id="herovideo"></video>
+                    <div class="container">
+                        <div class="vidContent">
+                            <h1 class="text-left">WELCOME TO BLOG</h1>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                nesciunt natus maxime tempore debitis eos nulla quo dolor pariatur provident
+                                consectetur, nobis possimus numquam eum consequatur maiores tenetur eveniet!</p>
+                            <a href="" id="vidBtn">Click Here</a>    
+                        </div>
+                    </div>
+                    <ul class="social-icons list-inline">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="bg-video">
+                    <video src="video/part1.mp4" autoplay muted loop id="herovideo"></video>
+                    <div class="container">
+                        <div class="vidContent">
+                            <h1 class="text-left">WELCOME TO BLOG</h1>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                nesciunt natus maxime tempore debitis eos nulla quo dolor pariatur provident
+                                consectetur, nobis possimus numquam eum consequatur maiores tenetur eveniet!</p>
+                            <a href="" id="vidBtn">Click Here</a>    
+                        </div>
+                    </div>
+                    <ul class="social-icons list-inline">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </li>
         </ul>
@@ -27,9 +86,9 @@
                 <li><a href="">Team</a></li>
                 <li><a href="">Work</a></li>
                 <li class="logo"><a href=""><img src="img/logo.png" alt="logo" class="logo white">
-                    <img src="img/logo.png" alt="logo" class="logo black"></a></li>
+                        <img src="img/logo.png" alt="logo" class="logo black"></a></li>
                 <li><a href="">Pricing</a></li>
-                <li><a href="">Cient</a></li>
+                <li><a href="">Client</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -66,7 +125,79 @@
             <a href="javascript:void(0);" class="nav-close"><span></span><span></span></a>
         </div>
     </div>
+    <main id="contents" role="main">
+        <section id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h3 id="">Awesome Service</h3>
+                        <p class="lead pb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div id="carouselService" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-shield fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-cog fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-bolt fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-shield fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-cog fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                        <div class="col-md px-md-5">
+                                            <div class="text-dark pb-3">
+                                                <i class="fa fa-bolt fa-5x"></i>
+                                            </div>
+                                            <h4 class="text-dark">Lorem ipsum dolor sit amet.</h4>
+                                            <br>
+                                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio obcaecati explicabo nemo ipsum inventore culpa soluta quam pariatur consequatur?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
 <script src="js/script.js"></script>
+
 </html>
