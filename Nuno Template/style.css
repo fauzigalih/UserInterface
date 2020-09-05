@@ -8,12 +8,11 @@ body {
 .offset:before {
   display: block;
   content: '';
-  height: 4rem;
-  margin-top: -4rem;
+  height: 3.7rem;
+  margin-top: -3.7rem;
 }
 /* Nav */
 .navbar {
-  height: 4rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9rem;
