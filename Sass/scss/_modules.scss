@@ -1,0 +1,11 @@
+@mixin flex-function($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+@mixin link-function {
+    text-decoration: none;
+    &:hover {
+        background-color: white;
+        color: blue;
+    }
+}

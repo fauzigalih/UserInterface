@@ -1,0 +1,87 @@
+@use 'modules' as m;
+
+// Normal
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+// Nesting
+.nesting {
+    background-color: aqua;
+    font-size: 2rem;
+    h1 {
+        color: white;
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+    p {
+        word-spacing: 1.5em;
+    }
+}
+
+// Variable
+.variable {
+    $font: 2rem;
+    $color: rgb(255, 208, 0);
+    h1 {
+        color: $color;
+    }
+    p, input, button {
+        font-size: $font;
+    }
+}
+
+//  Mixin
+@mixin flex-function($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+@mixin link-function {
+    text-decoration: none;
+    &:hover {
+        background-color: white;
+        color: blue;
+    }
+}
+.mixin {
+    background-color: yellowgreen;
+    ul {
+        font-size: 2rem;
+        list-style: none;
+        &.link {
+            @include flex-function(center);
+            li a {
+                @include link-function();
+            }
+        }
+        &.test {
+            @include flex-function(space-between);
+            li a {
+                @include link-function();
+            }
+        }
+    }
+}
+
+// Modules
+.modules {
+    background-color: cornsilk;
+    ul.modules {
+        @include m.flex-function(space-around);
+        list-style: none;
+        li a {
+            @include m.link-function();
+        }
+    }
+}
