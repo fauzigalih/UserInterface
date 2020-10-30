@@ -75,6 +75,7 @@ body {
 }
 
 // Modules
+// @use 'modules' as m;
 .modules {
     background-color: cornsilk;
     ul.modules {
@@ -83,5 +84,42 @@ body {
         li a {
             @include m.link-function();
         }
+    }
+}
+
+// Flow Control
+@mixin arrow-function($color, $direction) {
+    width: 0;
+    height: 0;
+    border-width: 1em;
+    border-style: solid;
+    border-color: transparent;
+    @if $direction == top {
+        border-bottom-color: $color;
+    } @else if $direction == right {
+        border-left-color: $color;
+    } @else if $direction == bottom {
+        border-top-color: $color;
+    } @else {
+        border-right-color: $color;
+    }
+}
+.flow {
+    .arrow  {
+        &-top {
+            @include arrow-function(green, top);
+        }
+        &-right {
+            @include arrow-function(green, right);
+        }
+        &-bottom {
+            @include arrow-function(green, bottom);
+        }
+        &-left {
+            @include arrow-function(green, left);
+        }
+    }
+    .list {
+
     }
 }
